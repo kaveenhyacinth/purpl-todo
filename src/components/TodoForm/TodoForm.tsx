@@ -4,7 +4,6 @@ import { Input, Button, Row, Col } from "antd";
 const TodoForm = ({
   buttonLabel,
   onChangeText,
-  onClick,
   onSubmit,
   placeholder,
   value,
@@ -18,7 +17,7 @@ const TodoForm = ({
             placeholder={placeholder}
             value={value}
             onChange={onChangeText}
-            onPressEnter={onClick}
+            onPressEnter={onSubmit}
           />
           <Button style={{ width: "20%" }} type="primary" onClick={onSubmit}>
             {buttonLabel.toUpperCase()}

@@ -8,5 +8,4 @@ type TodoFormProps = {
   buttonLabel: string;
   onChangeText: UserEvent;
   onSubmit: UserEvent;
-  onClick: UserEvent;
 };
