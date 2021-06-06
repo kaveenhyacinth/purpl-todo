@@ -5,15 +5,15 @@
 
 ## Installation
 
-- Clone the repo and tun `npm install` to install the dependencies.
-- Run `npm start` to open the Purpl Todo application
+- Clone the repo and run `npm install` to install the dependencies.
+- Run `npm start` to open the Purpl Todo application.
 
 ## User Guide
 
 - Enter a task to the text input given
-- Hit `Enter` or click the `ADD` button to add the task
-- Click on the `Tile` to mark a task as complete
-- Click on the `Bin` icon to delete a task
+- Hit `Enter` or click `ADD` button to add a task
+- Click the `Todo Tile` to mark a task as complete
+- Click the `Bin` icon to delete a task
 - When the list gets longer, the `back-to-top` button can be used to jump to the top
 - New `todo` items are stacked to the top
 
@@ -21,7 +21,7 @@
 
 - Project is developed in `Typescript`
 - Uses `Ant Design` as the theme
-- Uses `Tailwindcss`
+- Uses `Tailwindcss` along with `SASS`
 - Integrated with `Storybook`
 
 ### Storybook Components
@@ -32,6 +32,16 @@ Available Components
 
 - TodoForm
 - TodoTile
+
+## Other Scripts
+
+- `npm build:tailwind` -> compile tailwincss
+- `npm watch:tailwind` -> watching for the changes in `src/styles/scss` dir
+- `npm run start:react` -> run project without compiling tailwindcss
+
+## Testing
+
+- Snapshot testings are done by `Jest` and `Enzyme`
 
 ---
 
