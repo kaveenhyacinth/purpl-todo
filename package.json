@@ -26,7 +26,7 @@
     "build:tailwind": "postcss src/styles/scss -d src/styles/out",
     "watch:tailwind": "postcss src/styles/scss -d src/styles/out -w",
     "prebuild": "run-s build:tailwind",
-    "build": "npm-run-all build:tailwind craco build",
+    "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
     "storybook": "npm run build:tailwind && start-storybook -p 6006 -s public",
