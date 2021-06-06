@@ -2,6 +2,12 @@
 
 type UserEvent = (event: ChangeEvent<HTMLInputElement>) => void;
 
+type Todo = {
+  id: number;
+  text: string;
+  completed: boolean;
+};
+
 type TodoFormProps = {
   placeholder: string;
   value: string;
