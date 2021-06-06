@@ -32,6 +32,8 @@ const TodoList = () => {
 
   const handleAddTodo = (e: ChangeEvent<HTMLInputElement>, input: string) => {
     e.preventDefault();
+    setInput("");
+    if (!input || new RegExp(/^\s*$/).test(input)) return null;
     dispatch({
       type: ADD,
       payload: {
