@@ -9,17 +9,23 @@ const TodoForm = ({
   value,
 }: TodoFormProps) => {
   return (
-    <div>
+    <div data-testid="todo-form-container">
       <Row>
         <Col span={23}>
           <Input
+            data-testid="todo-form-input"
             style={{ width: "80%" }}
             placeholder={placeholder}
             value={value}
             onChange={onChangeText}
             onPressEnter={onSubmit}
           />
-          <Button style={{ width: "20%" }} type="primary" onClick={onSubmit}>
+          <Button
+            data-testid="todo-form-button"
+            style={{ width: "20%" }}
+            type="primary"
+            onClick={onSubmit}
+          >
             {buttonLabel.toUpperCase()}
           </Button>
         </Col>

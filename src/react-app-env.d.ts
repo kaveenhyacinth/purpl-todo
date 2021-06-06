@@ -17,13 +17,13 @@ type TodoFormProps = {
   placeholder: string;
   value: string;
   buttonLabel: string;
-  onChangeText: UserEvent;
-  onSubmit: UserEvent;
+  onChangeText?: UserEvent;
+  onSubmit?: UserEvent;
 };
 
 type TodoTileProps = {
   text: string;
   completed: boolean;
-  onComplete: UserEvent;
-  onDelete: UserEvent;
+  onComplete?: UserEvent;
+  onDelete?: UserEvent;
 };
