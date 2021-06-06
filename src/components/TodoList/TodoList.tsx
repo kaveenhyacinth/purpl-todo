@@ -1,5 +1,4 @@
 import React, { ChangeEvent, useReducer, useState } from "react";
-import { Typography } from "antd";
 import TodoForm from "../TodoForm/TodoForm";
 import TodoTile from "../TodoTile/TodoTile";
 import {
@@ -8,7 +7,6 @@ import {
   deleteTodo,
 } from "../../helpers/todoList.helpers";
 
-const { Title } = Typography;
 const ADD = "ADD";
 const COMPLETE = "COMPLETE";
 const DELETE = "DELETE";
@@ -44,27 +42,27 @@ const TodoList = () => {
     });
   };
 
-  const handleCompleteTodo = (e: ChangeEvent<HTMLInputElement>, id: number) => {
+  const handleCompleteTodo = (
+    e: ChangeEvent<HTMLInputElement>,
+    idx: number
+  ) => {
     e.preventDefault();
     dispatch({
       type: COMPLETE,
-      payload: id,
+      payload: idx,
     });
   };
 
-  const handleDeleteTodo = (e: ChangeEvent<HTMLInputElement>, idx: number) => {
+  const handleDeleteTodo = (e: ChangeEvent<HTMLInputElement>, id: number) => {
     e.preventDefault();
     dispatch({
       type: DELETE,
-      payload: idx,
+      payload: id,
     });
   };
 
   return (
     <>
-      <div className="mx-auto w-36">
-        <Title className="title">Purpl Todo</Title>
-      </div>
       <div className="flex-column w-3/4 mx-auto justify-center">
         <TodoForm
           buttonLabel="Add"
@@ -78,10 +76,10 @@ const TodoList = () => {
         {todos.map((todo, index) => (
           <TodoTile
             key={index.toString()}
-            onComplete={(e) => handleCompleteTodo(e, todo.id)}
-            onDelete={(e) => handleDeleteTodo(e, index)}
-            text="Complete the Purpl Todo web application"
-            completed
+            onComplete={(e) => handleCompleteTodo(e, index)}
+            onDelete={(e) => handleDeleteTodo(e, todo.id)}
+            text={todo.text}
+            completed={todo.completed}
           />
         ))}
       </div>

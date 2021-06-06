@@ -10,7 +10,7 @@ export const completeTodo = (
   index: number
 ): Array<Todo> => {
   const stub = [...todoList];
-  stub[index].completed = !todoList[index].completed;
+  stub[index].completed = true;
   return stub;
 };
 
