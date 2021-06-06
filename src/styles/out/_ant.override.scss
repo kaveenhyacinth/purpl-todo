@@ -1,0 +1,54 @@
+.ant-btn-primary {
+  font-weight: 700;
+}
+
+.ant-btn-text {
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));
+}
+
+.ant-btn-text:hover {
+  --tw-text-opacity: 1;
+  color: rgba(239, 68, 68, var(--tw-text-opacity));
+}
+
+.ant-btn-icon-only {
+  padding: 0px;
+  vertical-align: top;
+}
+
+h1.ant-typography {
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));
+}
+
+.ant-card-body {
+  padding: 0.75rem;
+}
+
+.ant-card-bordered {
+  border-style: none;
+}
+
+.site-back-top-basic {
+  --tw-text-opacity: 1;
+  color: rgba(249, 250, 251, var(--tw-text-opacity));
+}
+
+.ant-back-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+}
+
+.ant-back-top-content {
+  --tw-bg-opacity: 1;
+  background-color: rgba(124, 58, 237, var(--tw-bg-opacity));
+}
+
+.ant-back-top-content:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(124, 58, 237, var(--tw-text-opacity));
+}
