@@ -9,3 +9,10 @@ type TodoFormProps = {
   onChangeText: UserEvent;
   onSubmit: UserEvent;
 };
+
+type TodoTileProps = {
+  text: string;
+  completed: boolean;
+  onComplete: UserEvent;
+  onDelete: UserEvent;
+};
