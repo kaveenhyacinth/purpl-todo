@@ -1,4 +1,4 @@
-# Purpl Todo - Minimalist Todo Application
+# Purpl Todo - The Minimalist's Todo Application
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f1016973-e749-4953-a71d-237964173d0c/deploy-status)](https://app.netlify.com/sites/purpl/deploys)
 ![Kaveen Hyacinth](https://img.shields.io/badge/Kaveen%20Hyacinth-2021-blueviolet?style=flat)
