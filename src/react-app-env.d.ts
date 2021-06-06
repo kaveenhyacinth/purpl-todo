@@ -2,6 +2,11 @@
 
 type UserEvent = (event: ChangeEvent<HTMLInputElement>) => void;
 
+type TodoActions =
+  | { type: "ADD"; payload: Todo }
+  | { type: "COMPLETE"; payload: number }
+  | { type: "DELETE"; payload: number };
+
 type Todo = {
   id: number;
   text: string;
