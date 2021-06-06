@@ -4,9 +4,11 @@ import "antd/dist/antd.less";
 import "./styles/out/tailwind.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { BackTop } from "antd";
 
 ReactDOM.render(
   <React.StrictMode>
+    <BackTop visibilityHeight={10} />
     <App />
   </React.StrictMode>,
   document.getElementById("root")

@@ -63,7 +63,7 @@ const TodoList = () => {
 
   return (
     <>
-      <div className="flex-column w-3/4 mx-auto justify-center">
+      <div className="flex-column w-3/4 mx-auto mb-10 justify-center">
         <TodoForm
           buttonLabel="Add"
           onChangeText={(e) => handleChangeInput(e)}
