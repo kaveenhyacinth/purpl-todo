@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Button, Row, Col } from "antd";
 import { DeleteFilled } from "@ant-design/icons";
-import { primary, white } from "../../theme/Colors";
+import { primary, white, midnight } from "../../theme/Colors";
 
 const TodoTile = ({ completed, onComplete, onDelete, text }: TodoTileProps) => {
   return (
@@ -10,7 +10,10 @@ const TodoTile = ({ completed, onComplete, onDelete, text }: TodoTileProps) => {
         <Col span={23}>
           <Card
             onClick={onComplete}
-            style={{ background: completed ? primary : white }}
+            style={{
+              background: completed ? primary : white,
+              color: completed ? white : midnight,
+            }}
           >
             <p>
               {completed ? <span className="line-through">{text}</span> : text}
