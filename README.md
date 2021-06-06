@@ -47,6 +47,10 @@ Available Components
 
 - Snapshot testings are done by `Jest` and `Enzyme`
 
+```diff
+- NB - Since this is a submission none of the test files nor the non-production files are ignored
+```
+
 ---
 
 Made with 💗 to make you 😄
