@@ -21,11 +21,15 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "npm-run-all build:tailwind start:react",
+    "start:react": "craco start",
+    "build:tailwind": "postcss src/styles/scss -d src/styles/out",
+    "watch:tailwind": "postcss src/styles/scss -d src/styles/out -w",
+    "prebuild": "run-s build:tailwind",
+    "build": "npm-run-all build:tailwind craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
+    "storybook": "npm run build:tailwind && start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
@@ -69,5 +73,10 @@
     "postcss-scss": "^3.0.5",
     "sass": "^1.34.1",
     "tailwindcss": "^2.1.4"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$"
+    ]
   }
 }
