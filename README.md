@@ -3,6 +3,10 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f1016973-e749-4953-a71d-237964173d0c/deploy-status)](https://app.netlify.com/sites/purpl/deploys)
 ![Kaveen Hyacinth](https://img.shields.io/badge/Kaveen%20Hyacinth-2021-blueviolet?style=flat)
 
+![UI screenshot](https://drive.google.com/uc?export=view&id=1rwNl8qrawvTVyg8cFlT2Bw5GctLl3HZN)
+
+[Figma design file](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJkCKaVef5Dqhhq2sPTYALD%2FPurpl-Todo%3Fnode-id%3D0%253A1)
+
 ## Installation
 
 - Clone the repo and run `npm install` to install the dependencies.
@@ -42,8 +46,6 @@ Available Components
 ## Testing
 
 - Snapshot testings are done by `Jest` and `Enzyme`
-
-[Figma design file](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJkCKaVef5Dqhhq2sPTYALD%2FPurpl-Todo%3Fnode-id%3D0%253A1)
 
 ---
 
