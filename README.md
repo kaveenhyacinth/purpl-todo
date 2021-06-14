@@ -50,7 +50,7 @@ Available Components
 - Snapshot testings are done by `Jest` and `Enzyme`
 
 ```diff
-- Since the Purpl Todo is a submission, none of the test files nor the non-production files are ignored.
+- Since the Purpl Todo is a submission, none of the test files nor the non-production files are ignored
 ```
 
 ---
